@@ -1,5 +1,3 @@
-
-   
 /**
         'feat', // 新功能 feature
         'fix', // 修复 bug
@@ -10,4 +8,4 @@
         'style', // 代码格式(不影响代码运行的变动)
         'revert', // 回退
  */
-        module.exports = {extends: ['@commitlint/config-conventional']}
+module.exports = {extends: ['@commitlint/config-conventional']}

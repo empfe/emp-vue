@@ -1,8 +1,6 @@
-
-   
 <template>
   <div>
-    <h1>VUE 3 Typescript!</h1>
+    <h1>VUE 3 Typescript!!</h1>
   </div>
 </template>
 
@@ -12,8 +10,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 h1{
-  color: #000;
+  color: #222;
 }
 </style>

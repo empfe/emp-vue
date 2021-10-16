@@ -1,36 +1,26 @@
 // const path = require('path')
 module.exports = fn => ec => {
   const {config} = ec
-  // config.module.delete('scripts')
+  // reset script
+  config.module.rules.store.delete('scripts')
   // vue3
   config.module
-    .rule('vue_v3')
+    .rule('vue-loader')
     .test(/\.vue$/)
     .use('vue-loader')
     .loader(require.resolve('vue-loader'))
-  // js
+  // ts
   config.module
-    .rule('scripts')
-    // .test(/\.(js|jsx)$/)
-    .use('babel')
-    .loader(require.resolve('babel-loader'))
-    .options({
-      presets: ['@babel/preset-env', '@babel/preset-typescript'],
-      plugins: [
-        '@vue/babel-plugin-jsx',
-        ['@babel/plugin-proposal-decorators', {legacy: true}],
-        ['@babel/plugin-proposal-class-properties', {loose: true}],
-        '@babel/transform-runtime',
-      ],
-      overrides: [
-        {
-          test: /\.vue$/,
-          plugins: ['@babel/transform-typescript'],
-        },
-      ],
-    })
-
-  config.resolve.alias.set('vue', '@vue/runtime-dom')
-  config.plugin('vue_v3').use(require('vue-loader').VueLoaderPlugin, [])
+    .rule('ts-loader')
+    .test(/\.tsx?$/)
+    .exclude.add(/node_modules/)
+    .end()
+    .use('ts-loader')
+    .loader(require.resolve('ts-loader'))
+    .options({appendTsSuffixTo: [/\.vue$/]})
+  // alias vue
+  // config.resolve.alias.set('vue', '@vue/runtime-dom')
+  // plugin
+  config.plugin('vue-loader-plugin').use(require('vue-loader').VueLoaderPlugin, [])
   return fn && fn(ec)
 }

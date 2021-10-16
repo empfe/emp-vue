@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "emp dev",
+    "dev": "emp dev -wl --hot",
     "build": "emp build --env prod",
     "start": "emp serve",
     "stat": "emp build --analyze",
@@ -14,9 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@efox/emp-cli": "^1.9.9",
-    "@efox/emp-vue3": "^1.2.2",
-    "@empfe/eslint-config-vue3-prettier": "workspace:^1.0.0",
+    "@efox/emp-cli": "^1.9.10",
+    "@empfe/framework-vue3": "workspace:^1.0.0",
     "typescript": "^4.4.4"
   },
   "dependencies": {
