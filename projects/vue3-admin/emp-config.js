@@ -14,8 +14,13 @@ module.exports = {
   },
   moduleFederation: {
     name: 'vue3Admin',
+    filename: 'emp.js',
+    remotes: {
+      '@empfe/base': 'vue3Base@http://127.0.0.1:8001/emp.js',
+    },
     shared: {
-      vue: {requiredVersion: pkg.dependencies.vue},
+      // vue: {eager: true, singleton: true, requiredVersion: pkg.dependencies.vue},//体积会增加，dev模式下会远程组件替换本地组件
+      // vue: {requiredVersion: pkg.dependencies.vue}, // dev模式下会远程组件替换本地组件
     },
   },
 }
