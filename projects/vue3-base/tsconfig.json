@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["@empfe/framework-vue3/vue"],
     "target": "esnext",
     "module": "esnext",
     "strict": true,
@@ -30,7 +31,7 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.vue",
-    "src/shims-vue.d.ts"
+    "src/vue.d.ts"
   ],
   "exclude": [
     "node_modules"

@@ -1,7 +1,1 @@
-declare module '*.vue' {
-  import {ComponentOptions} from 'vue'
-  const component: ComponentOptions
-  export default component
-}
-
-// declare module 'vuex'
+/// <reference types="@empfe/framework-vue3/vue" />

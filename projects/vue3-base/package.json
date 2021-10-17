@@ -15,10 +15,14 @@
   "license": "ISC",
   "devDependencies": {
     "@efox/emp-cli": "^1.9.10",
+    "@empfe/eslint-config-vue3": "workspace:^1.0.0",
     "@empfe/framework-vue3": "workspace:^1.0.0",
     "typescript": "^4.4.4"
   },
   "dependencies": {
     "vue": "^3.2.20"
+  },
+  "eslintConfig":{
+    "extends": ["@empfe/eslint-config-vue3"]
   }
 }
