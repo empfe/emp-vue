@@ -14,8 +14,8 @@ module.exports = {
   },
   moduleFederation: {
     name: 'vue3H5',
-    shared: {
-      vue: {requiredVersion: pkg.dependencies.vue},
+    remotes: {
+      '@empfe/base': 'vue3Base@http://127.0.0.1:8001/emp.js',
     },
   },
 }
