@@ -38,7 +38,7 @@ importers:
       prettier: 2.4.1
       vue-eslint-parser: 7.11.0_eslint@7.32.0
 
-  packages/framework-vue3:
+  packages/vue3:
     specifiers:
       '@vue/babel-plugin-jsx': ^1.1.0
       '@vue/compiler-sfc': ^3.2.20
@@ -50,19 +50,43 @@ importers:
       vue: 3.2.20
       vue-loader: 16.8.1
 
-  projects/vue3-base:
+  projects/vue3-admin:
     specifiers:
       '@efox/emp-cli': ^1.9.10
-      '@empfe/eslint-config-vue3': workspace:^1.0.0
-      '@empfe/framework-vue3': workspace:^1.0.0
+      '@empfe/vue3': workspace:^1.0.0
       typescript: ^4.4.4
       vue: ^3.2.20
     dependencies:
       vue: 3.2.20
     devDependencies:
       '@efox/emp-cli': 1.9.10
-      '@empfe/eslint-config-vue3': link:../../packages/eslint-config-vue3
-      '@empfe/framework-vue3': link:../../packages/framework-vue3
+      '@empfe/vue3': link:../../packages/vue3
+      typescript: 4.4.4
+
+  projects/vue3-base:
+    specifiers:
+      '@efox/emp-cli': ^1.9.10
+      '@empfe/vue3': workspace:^1.0.0
+      typescript: ^4.4.4
+      vue: ^3.2.20
+    dependencies:
+      vue: 3.2.20
+    devDependencies:
+      '@efox/emp-cli': 1.9.10
+      '@empfe/vue3': link:../../packages/vue3
+      typescript: 4.4.4
+
+  projects/vue3-h5:
+    specifiers:
+      '@efox/emp-cli': ^1.9.10
+      '@empfe/vue3': workspace:^1.0.0
+      typescript: ^4.4.4
+      vue: ^3.2.20
+    dependencies:
+      vue: 3.2.20
+    devDependencies:
+      '@efox/emp-cli': 1.9.10
+      '@empfe/vue3': link:../../packages/vue3
       typescript: 4.4.4
 
 packages:

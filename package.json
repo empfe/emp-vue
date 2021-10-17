@@ -4,7 +4,9 @@
   "description": "emp vue 3 workspace",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ext js,ts,tsx --fix"
+    "lint": "eslint . --ext js,ts,tsx --fix",
+    "dev:admin":"pnpm run --filter={vue3-base,vue3-admin} --parallel dev",
+    "dev:h5":"pnpm run --filter={vue3-base,vue3-h5} --parallel dev"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>VUE 3 Typescript</h1>
+    <h1>VUE 3 ADMIN</h1>
   </div>
 </template>
 

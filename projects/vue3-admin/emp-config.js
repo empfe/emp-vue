@@ -8,17 +8,14 @@ module.exports = {
   webpack() {
     return {
       devServer: {
-        port: 8001,
+        port: 8002,
       },
     }
   },
   moduleFederation: {
-    name: 'vue3Base',
+    name: 'vue3Admin',
     shared: {
       vue: {requiredVersion: pkg.dependencies.vue},
-    },
-    exposes: {
-      './App': './src/components/App',
     },
   },
 }

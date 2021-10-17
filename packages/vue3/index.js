@@ -26,7 +26,7 @@ module.exports = fn => ec => {
           require.resolve('@babel/preset-env'),
           {
             useBuiltIns: 'entry',
-            debug: isDev,
+            debug: false,
             corejs: 3,
             loose: true,
           },

@@ -13,27 +13,11 @@
     "sourceMap": true,
     "baseUrl": ".",
     "allowJs": true,
-    /* "types": [
-      "webpack-env"
-    ], */
-    "paths": {
-      "src/*": [
-        "src/*"
-      ]
-    },
     "lib": [
       "esnext",
       "dom",
       "dom.iterable",
       "scripthost"
     ]
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.vue",
-    "src/vue.d.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  }
 }
