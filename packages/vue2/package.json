@@ -1,0 +1,26 @@
+{
+  "name": "@empfe/vue2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/empfe/emp-vue3.git",
+    "directory": "packages/vue2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fork-ts-checker-webpack-plugin": "^6.3.4",
+    "vue": "^2.6.14",
+    "vue-loader": "^15.9.8",
+    "vue-svg-loader": "^0.16.0",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

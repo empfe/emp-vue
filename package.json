@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --ext js,ts,tsx --fix",
+    "dev":"pnpm run --filter={vue2-base,vue2-admin} --parallel dev",
+    "build":"pnpm run --filter={vue2-base,vue2-admin} --parallel build",
+    "start":"pnpm run --filter={vue2-base,vue2-admin} --parallel start",
     "dev:admin":"pnpm run --filter={vue3-base,vue3-admin} --parallel dev",
     "build:admin":"pnpm run --filter={vue3-base,vue3-admin} --parallel build",
     "start:admin":"pnpm run --filter={vue3-base,vue3-admin} --parallel start",

@@ -1,5 +1,5 @@
 {
-  "extends": "@empfe/vue3",
+  "extends": "@empfe/vue3/ts.json",
   "include": ["src"],
   "exclude": ["node_modules"]
 }

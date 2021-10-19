@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/empfe/emp-vue3.git",
+    "directory": "packages/vue3"
+  },
   "publishConfig": {
     "access": "public"
   },
