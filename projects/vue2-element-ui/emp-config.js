@@ -8,7 +8,7 @@ module.exports = {
       args[0] = {
         ...args[0],
         ...{
-          title: 'EMP Vue2 Admin',
+          title: 'EMP Vue2 Element UI',
         },
       }
       return args
@@ -17,17 +17,18 @@ module.exports = {
   webpack() {
     return {
       devServer: {
-        port: 9001,
+        port: 9003,
       },
     }
   },
   async moduleFederation() {
     return {
-      name: 'vue2Admin',
+      name: 'vue2ElementUI',
       filename: 'emp.js',
-      remotes: {
-        '@v2b': 'vue2Base@http://localhost:8009/emp.js',
+      exposes: {
+        // './Content': './src/components/Content',
       },
+      // shared: ['vue/dist/vue.esm.js'],
     }
   },
 }
