@@ -1,8 +1,9 @@
+const vue2 = require('@efox/emp-vue2')
 /**
  * @type {import('@efox/emp-cli').EMPConfig}
  */
 module.exports = {
-  framework: [require('@empfe/vue2')],
+  framework: [vue2],
   webpackChain(config) {
     config.plugin('html').tap(args => {
       args[0] = {
