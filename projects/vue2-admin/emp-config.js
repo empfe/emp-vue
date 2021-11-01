@@ -27,7 +27,7 @@ module.exports = {
       name: 'vue2Admin',
       filename: 'emp.js',
       remotes: {
-        '@v2b': 'vue2Base@http://localhost:8009/emp.js',
+        '@v2b': 'vue2Base@http://localhost:9002/emp.js',
       },
     }
   },

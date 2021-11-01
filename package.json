@@ -1,30 +1,30 @@
 {
-  "name": "emp-vue3",
+  "name": "emp-vue2",
   "version": "1.0.0",
-  "description": "emp vue 3 workspace",
+  "description": "emp vue 2 workspace",
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --ext js,ts,tsx --fix",
     "dev":"pnpm run --filter={vue2-element-ui,vue2-admin} --parallel dev",
     "build":"pnpm run --filter={vue2-element-ui,vue2-admin} --parallel build",
     "start":"pnpm run --filter={vue2-element-ui,vue2-admin} --parallel start",
-    "dev:admin":"pnpm run --filter={vue3-base,vue3-admin} --parallel dev",
-    "build:admin":"pnpm run --filter={vue3-base,vue3-admin} --parallel build",
-    "start:admin":"pnpm run --filter={vue3-base,vue3-admin} --parallel start",
-    "dev:h5":"pnpm run --filter={vue3-base,vue3-h5} --parallel dev",
-    "build:h5":"pnpm run --filter={vue3-base,vue3-h5} --parallel build",
-    "start:h5":"pnpm run --filter={vue3-base,vue3-h5} --parallel start"
+    "dev:admin":"pnpm run --filter={vue2-base,vue2-admin} --parallel dev",
+    "build:admin":"pnpm run --filter={vue2-base,vue2-admin} --parallel build",
+    "start:admin":"pnpm run --filter={vue2-base,vue2-admin} --parallel start",
+    "dev:h5":"pnpm run --filter={vue2-base,vue2-h5} --parallel dev",
+    "build:h5":"pnpm run --filter={vue2-base,vue2-h5} --parallel build",
+    "start:h5":"pnpm run --filter={vue2-base,vue2-h5} --parallel start"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/empfe/emp-vue3.git"
+    "url": "git+https://github.com/empfe/emp-vue.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/empfe/emp-vue3/issues"
+    "url": "https://github.com/empfe/emp-vue/issues"
   },
-  "homepage": "https://github.com/empfe/emp-vue3#readme",
+  "homepage": "https://github.com/empfe/emp-vue#readme",
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
