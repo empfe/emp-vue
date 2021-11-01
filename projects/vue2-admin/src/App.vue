@@ -2,6 +2,7 @@
   <div class="main">
     <h1>Project App</h1>
     <Content />
+    <App />
   </div>
 </template>
 
@@ -9,6 +10,7 @@
 //import Content from "@v2b/Content"
 export default {
   components: {
+    App: () => import('@v2h5/App'),
     Content: () => import('@v2b/Content'),
   },
 }

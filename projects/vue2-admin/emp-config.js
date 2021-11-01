@@ -28,6 +28,7 @@ module.exports = {
       filename: 'emp.js',
       remotes: {
         '@v2b': 'vue2Base@http://localhost:9002/emp.js',
+        '@v2h5': 'vue2H5@http://localhost:9003/emp.js',
       },
     }
   },
