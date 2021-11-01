@@ -1,5 +1,5 @@
-# emp-vue3
-emp vue 3 workspace
+# emp-vue2
+emp vue 2 workspace
 
 ## 调试指令 
 + admin 项目 
@@ -17,9 +17,9 @@ emp vue 3 workspace
 ## 注意事项 
 ```js
 module.exports = {
-  compile: [vue3],
+  compile: [vue2],
   moduleFederation: {
-    name: 'vue3Base',
+    name: 'vue2Base',
     filename: 'emp.js',
     shared: {
       vue: {eager: true, singleton: true, requiredVersion: pkg.dependencies.vue},//体积会增加，dev模式下会远程组件替换本地组件
